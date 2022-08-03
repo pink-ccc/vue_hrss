@@ -1,9 +1,9 @@
 import Cookies from 'js-cookie'
 
-const TokenKey = '78——token'
+const TokenKey = 'token'
 
 export function getToken() {
-  return Cookies.get(TokenKey)
+  return Cookies.get(TokenKey) || null
 }
 
 export function setToken(token) {
